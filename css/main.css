@@ -98,7 +98,7 @@ textarea {
 
 html {
   height: 100%;
-  background-color: #ffaa80;
+  background-color: #222;
 }
 
 body {
@@ -106,6 +106,14 @@ body {
   font-size: 1em;
   height: 100%;
   color: #fff;
+  padding: 0em 2em;
+}
+
+header, main, footer{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content:flex-start;
 }
 
 .wrapper {
@@ -114,32 +122,52 @@ body {
     font-weight: 700;
     height: 100%;
     padding-top: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
-.div-1, .div-2, .div-3 {
+header h1{
+  font-size: 4em;
+}
+
+main{
+  border-bottom: 2px solid #ff4d4d;
+}
+
+main p{
+  line-height: 1.5em;
+  font-size: 1.5em;
+}
+
+
+.div-1, .div-2, .div-3{
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fff;
   line-height: 1.5em;
   font-size: 1.5em;
-  background-color: #ffaa80;
   height: 200px;
   width: 33.1%;
+  padding-bottom: 1.5em;
+  border-bottom: 2px solid #ff4d4d;
 }
+
 .div-1 p, .div-2 p, .div-3 p{
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  width: 75%;
-  text-align: inherit;
+  padding-left: 1.5em;
 }
 
 .div-2{
-  border-right: 3px dotted #ff4d4d;
-  border-left: 3px dotted #ff4d4d;
+  border-left: 2px solid #ff4d4d;
+  border-right: 2px solid #ff4d4d;
 }
+
+footer a{
+  padding: 2em 1em 2em 0;
+
+}
+
+
+
 
 
 
